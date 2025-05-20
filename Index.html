@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🚗 Car Care Reminder</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="app-box">
+      <h1>🛠️ Car Care Reminder</h1>
+      <p class="subtitle">Keep your car healthy and happy!</p>
+
+      <form id="carForm" autocomplete="off">
+        <input type="text" id="carName" placeholder="🚘 Car Model" required />
+        <input type="date" id="lastService" required />
+        <input type="number" id="interval" placeholder="🔁 Service Interval (days)" min="1" required />
+        <button type="submit">Set ⏰ Reminder</button>
+      </form>
+
+      <div id="resultBox" class="result-box hidden"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
